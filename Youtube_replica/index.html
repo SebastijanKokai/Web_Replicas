@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Youtube replica</title>
+  </head>
+  <body>
+    <div class="profile-details" id="profile-details">
+      <div class="profile-account">
+        <button class="icon">S</button>
+        <div class="profile-name">
+          <h2>Sebastijan_staged</h2>
+          <a href="#">Manage google account</a>
+        </div>
+      </div>
+      <div class="profile-settings">
+        <button class="profile-setting">
+          <i class="fa-solid fa-user"></i>
+          <p>Your channel</p>
+        </button>
+        <button class="profile-setting">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>Purchases and memberships</p>
+        </button>
+        <button class="profile-setting">
+          <i class="fa-solid fa-gear"></i>
+          <p>YouTube studio</p>
+        </button>
+        <button class="profile-setting">
+          <i class="fa-solid fa-user-group"></i>
+          <p>Change account</p>
+        </button>
+        <button class="profile-setting">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <p>Logout</p>
+        </button>
+      </div>
+    </div>
+    <header class="header">
+      <div class="menu" id="menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="logo">
+        <img src="resources\yt_logo_rgb_dark.png" alt="Youtube logo" />
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search" />
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="microphone-button">
+          <i class="fas fa-microphone"></i>
+        </button>
+      </div>
+      <div class="user-icons">
+        <button class="user-icon">
+          <i class="fas fa-video"></i>
+        </button>
+        <button class="user-icon">
+          <i class="fas fa-th"></i>
+        </button>
+        <button class="user-icon">
+          <i class="fas fa-bell"></i>
+        </button>
+        <button class="user-profile-icon" id="user-profile-icon">S</button>
+      </div>
+    </header>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="main-container">
+      <div class="left-side" id="left-side">
+        <button class="left-menu-button">
+          <i class="fas fa-home"></i>
+          <p>Home</p>
+        </button>
+        <button class="left-menu-button">
+          <i class="far fa-compass"></i>
+          <p>Explore</p>
+        </button>
+        <button class="left-menu-button">
+          <i class="fas fa-play"></i>
+          <p>Following</p>
+        </button>
+        <button class="left-menu-button" id="videos-button">
+          <i class="fas fa-photo-video"></i>
+          <p>Videos</p>
+        </button>
+        <div class="extended-menu">
+          <button class="left-menu-button">
+            <i class="fas fa-history"></i>
+            <p>History</p>
+          </button>
+          <button class="left-menu-button">
+            <i class="fas fa-play-circle"></i>
+            <p>Your videos</p>
+          </button>
+          <button class="left-menu-button">
+            <i class="far fa-clock"></i>
+            <p>Watch later</p>
+          </button>
+          <button class="left-menu-button" id="liked-videos-button">
+            <i class="far fa-thumbs-up"></i>
+            <p>Liked videos</p>
+          </button>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topics-bar"></div>
+        <div class="cards-container"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"
+      integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
